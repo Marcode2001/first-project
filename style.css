@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(255, 231, 240, 0.774);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    color: rgb(204, 91, 110);   
+    font-weight: 700;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.navigation a{
+    font-family: "Protest Guerrilla", sans-serif;
+    text-decoration: none;
+    color: rgb(204, 91, 110);
+    font-weight: 600;
+    font-size: 1.3em;
+    padding-left: 1.875em;
+    padding: 0.625em 1.25em;
+}
+
+.navigation a:hover{
+    color: rgb(204, 48, 74);
+}
+
+.section {
+    padding: 100px 200px 
+ }
+
+.main{
+   padding: 150px 100px;
+   width: 100%;
+   min-height: 100vh;
+   align-items: center;
+   background: url(images/butterfly.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   /*background-attachment: fixed;*/
+   
+ }
+ .main h2{
+    font-family: "Anton", sans-serif;
+    color: rgb(66, 63, 64);
+    font-size: 1.7em;
+    font-weight: 500;
+    flex-wrap: wrap;
+    
+ }
+
+ .main span{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(204, 91, 110);
+    font-size: 3em;
+    font-weight: 600;
+ }
+
+ .main h3{
+    color:  rgb(66, 63, 64);
+    font-size: 1.7em;
+    font-weight: 550;
+    letter-spacing: 0.0625em;
+    margin-top: 0.625em;
+    margin-bottom: 1.875em;
+ }
+
+.main-btn{
+    color: white;
+    background-color:rgb(204, 91, 110) ;
+    text-decoration: none;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.4em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 20px 13px;
+    letter-spacing: 1.5px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover{
+    background-color: rgb(204, 48, 74) ;
+    transform: scale(1.1);
+   
+}
+
+.social-icons a{
+    color:rgb(204, 91, 110) ;
+    font-size: 2.1em;
+    padding-right: 30px;
+}
+
+.social-icons a:hover{
+    color:rgb(204, 48, 74) ;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: rgb(204, 91, 110);
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.services {
+    background-color: rgb(250, 250, 233);
+    padding: 150px
+}
+
+.card {
+    background-color: white;
+    width: 19em; /* Adjusted width */
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+ }
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color:rgb(204, 48, 74)  ;
+    font-size: 3em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color:rgb(204, 91, 110) ;
+    font-size: 2.3em;
+    font-weight: 800;
+    margin: 15px;
+}
+
+.project{
+    background-color: rgb(211, 189, 200);
+}
+
+.project .content{
+    margin-top: 30px;
+}
+
+.project-title span{
+   color: rgb(204, 91, 110)
+}
+
+.project-card{
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.image img{
+    width: 100%;
+}
+
+.project-card:hover .image{
+    opacity: 0.85;
+}
+
+.project-info{
+    padding: 1em;
+}
+
+.category{
+    font-size: 0.9em;
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.project {
+    padding: 130px 50px
+}
+
+.contact{
+    background-color: rgb(250, 241, 231);
+    padding: 150px
+}
+
+.contact .icon{
+    font-size: 4em;
+}
+
+.footer{
+    background-color: rgb(196, 174, 185) ;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span  {
+    color:rgb(204, 48, 74) ;
+}
+
+.footer .social-icons a{
+   color: white;
+   font-size: 1.5em;
+   padding: 0 15px 0 0;
+}
+
+@media(max-width:1024px){
+    .navigation a{
+        font-size: 0.87em;
+        padding-right: 4px;
+    }
+
+    .logo{
+        font-size: 1.5em; 
+        padding-left: 8px;
+    }
+
+   .main{
+    padding-left: 20px;
+   }
+
+   .main h2{
+    font-size: 1.4em;
+   }
+   .main span{
+    font-size: 2.5em;
+   }
+
+   .main h3{
+    font-size: 1.5em;
+   }
+
+   .main-btn{
+    font-size: 1.2em;
+   }
+
+   .social-icons a{
+    font-size: 1.5em;
+   }
+
+   .category{
+    font-size: 0.8em;
+}
+
+.project-title span{
+    font-size: 0.9em;
+}
+
+.project-title a{
+    font-size: 0.8em;
+}
+
+.footer-title{
+    font-size: 1em;
+    padding-left: 1px;
+}
+
+.footer .social-icons a{
+    font-size: 1em;
+    padding-right: 2px;
+}
+
+}
